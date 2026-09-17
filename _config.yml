@@ -1,0 +1,15 @@
+title: AI for Good Challenge
+description: A SUNY AI Partnership Project on social connection and community resilience.
+url: ""
+baseurl: ""
+remote_theme: mmistakes/minimal-mistakes@4.28.1
+plugins:
+  - jekyll-include-cache
+markdown: kramdown
+timezone: America/New_York
+
+# GitHub Pages build configuration.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
