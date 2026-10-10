@@ -180,13 +180,25 @@ nav{gap:clamp(12px,1.7vw,25px);font-size:clamp(.75rem,1.2vw,.875rem)}
 
 /* Judge profiles */
 .awards-subheading{margin:42px 0 18px;color:#fff;font-size:clamp(2.25rem,4.1vw,3.7rem);line-height:1.08;letter-spacing:-.045em}
-.judges-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+.judges-grid{grid-template-columns:repeat(4,minmax(0,1fr));align-items:start}
 .judge-card{display:flex;align-items:center;gap:16px;min-width:0}
 .judge-photo{display:block;flex:0 0 88px;width:88px;height:88px;object-fit:cover;border-radius:50%;border:3px solid #fff;box-shadow:0 8px 18px #00000024}
+.judge-photo-placeholder{display:flex;align-items:center;justify-content:center;background:var(--gold);color:var(--deep);font-size:1.4rem;font-weight:900}
 .judge-card h3{margin:0 0 6px;color:#fff;font-size:clamp(1.15rem,1.7vw,1.45rem)}
 .judge-link{color:var(--gold);font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.speaker-profile{display:flex;align-items:flex-start;gap:24px}
+.speaker-photo{display:block;flex:0 0 144px;width:144px;height:144px;object-fit:cover;border-radius:50%;border:3px solid #fff;box-shadow:0 8px 18px #00000024}
 .guest-speaker-placeholder,.registration-block{margin-top:34px;padding-top:26px;border-top:1px solid #9d8da9}
 .guest-speaker-placeholder h2,.registration-block h2{margin-top:0}
 .guest-speaker-placeholder p{margin:0;color:#cfc3d8;font-size:1.05rem}
+.speaker-details h3{margin:0 0 8px;color:#fff;font-size:clamp(1.35rem,2.2vw,1.8rem)}
+.speaker-talk{max-width:850px;margin-bottom:12px!important;color:#fff!important;font-weight:700}
+.speaker-bio{margin-top:8px;max-width:900px}
+.speaker-bio summary{display:inline-flex;align-items:center;gap:8px;padding:4px 0;color:var(--gold);font-weight:850;cursor:pointer;list-style:none}
+.speaker-bio summary::-webkit-details-marker{display:none}
+.speaker-bio summary::after{content:"+";font-size:1.3rem;line-height:1}
+.speaker-bio[open] summary::after{content:"−"}
+.speaker-bio p{padding:0 0 8px;line-height:1.6}
 .registration-link{background:var(--gold);color:var(--deep)}
-@media(max-width:800px){.judges-grid{grid-template-columns:1fr}.judge-card{padding-bottom:10px}.guest-speaker-placeholder,.registration-block{margin-top:18px}}
+@media(max-width:1100px){.judges-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.judges-grid{grid-template-columns:1fr}.judge-card{padding-bottom:10px}.speaker-profile{display:block}.speaker-photo{margin-bottom:18px}.guest-speaker-placeholder,.registration-block{margin-top:18px}}
